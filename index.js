@@ -54,6 +54,6 @@ const currencyFetcher = async () => {
 
 //This will run every 12 hours
 cron.schedule('* */12 * * *', async () => {
-	console.log('running a task every minute');
+	console.log('running a task every 12 hours');
 	await currencyFetcher();
 });
